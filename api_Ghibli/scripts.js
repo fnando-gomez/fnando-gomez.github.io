@@ -14,6 +14,10 @@ fetch('https://ghibliapi.herokuapp.com/films')
             const h1 = document.createElement('h1')
             h1.textContent = movie.title
 
+            //Create an "h3" and set the text content to the film's director
+            const p1 = document.createElement('p')
+            p1.textContent = `Director: ${movie.director}`
+
             //Create a "p" and set the text content to the film's description
             const p = document.createElement('p')
             movie.description = movie.description.substring(0,300)// Limit to 300 chars
@@ -23,6 +27,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
 
             card.appendChild(h1)
             card.appendChild(p)
+            card.appendChild(p1)
             
         });
     })
