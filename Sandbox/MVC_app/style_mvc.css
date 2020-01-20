@@ -4,11 +4,7 @@
   box-sizing: border-box
 }
 
-@-o-viewport{
-  width:device-width;
-  zoom:1.0;
-}
-
+@media screen and (max-width: 481px){
 html {
   font-family: monospace;
   font-size: 1rem;
@@ -16,7 +12,7 @@ html {
 }
 
 #root {
-  max-width: 40%;
+  max-width: 60%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -92,4 +88,5 @@ li span:focus {
   outline: 0;
   border: 2px solid #007bff;
   background: rgba(179, 207, 255, 0.52)
+}
 }
