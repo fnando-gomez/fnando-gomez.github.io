@@ -77,11 +77,17 @@ let previousTarget = null
 //Grab the div with an id of root
 const game = document.getElementById('game')
 
+//Insert logo
+const Logo_place = document.getElementById('logo')
+const logo = document.createElement('img')
+    logo.src = 'logo.png'
+
 // Create a section with a class of grid
 const grid = document.createElement('section')
 grid.setAttribute('class', 'grid')
 
 //Append the grid section to the dame div
+Logo_place.appendChild(logo)
 game.appendChild(grid)
 
 //For each item in the cardArrays array
