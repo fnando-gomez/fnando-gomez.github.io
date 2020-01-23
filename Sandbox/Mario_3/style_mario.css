@@ -14,6 +14,8 @@ img {
     display:block;
     margin: 1rem auto;
     max-width: 90%;
+    transform: scale(.7);
+
 }
 
 .grid {
